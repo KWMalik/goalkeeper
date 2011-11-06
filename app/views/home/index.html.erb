@@ -1,0 +1,27 @@
+<div class="container_12">
+  <div class="grid_6">
+	<h2>Sign up!</h2>
+	<%= form_tag("/signup", :method=> "post") do %>
+		<%= label_tag(:email, "Email: ") %>
+		<%= text_field_tag(:email) %>
+		<%= submit_tag("Sign up!") %>
+	<% end %>
+  </div>
+  <div class="grid_6">
+	<h2>An every day tool for </h2>
+    <p>
+      <ul>
+		<li>
+			Collaborative planning
+		</li>
+		<li>
+			Daily updates via timelines
+		</li>
+		<li>
+			Efficient tracking with distributed teams
+		</li>
+	  </ul>
+    </p>
+  </div>
+  <div class="clear" />
+</div>
