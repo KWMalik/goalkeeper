@@ -7,10 +7,17 @@ gem 'rails', '3.1.1'
 
 group :production do
   gem 'pg'
+
+ #For heroku to work:
+ gem 'execjs'
+ gem 'therubyracer'
+
 end
 group :development, :test do
   gem 'sqlite3'
 end
+
+
 
 # Gems used only for assets and not required
 # in production environments by default.
